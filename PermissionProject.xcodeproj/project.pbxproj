@@ -15,6 +15,19 @@
 		D8992E1F2700E64A0065F68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8992E1D2700E64A0065F68D /* LaunchScreen.storyboard */; };
 		D8992E2A2700E64A0065F68D /* PermissionProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E292700E64A0065F68D /* PermissionProjectTests.swift */; };
 		D8992E352700E64A0065F68D /* PermissionProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E342700E64A0065F68D /* PermissionProjectUITests.swift */; };
+		D8992E442700E6710065F68D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E432700E6710065F68D /* BaseView.swift */; };
+		D8992E472700E71E0065F68D /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E462700E71E0065F68D /* ActionButton.swift */; };
+		D8992E4A2700EA9C0065F68D /* ActionButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E492700EA9C0065F68D /* ActionButtonData.swift */; };
+		D8992E4C2700EB6C0065F68D /* ActionButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E4B2700EB6C0065F68D /* ActionButtonType.swift */; };
+		D8992E4E2700EBD80065F68D /* ActionButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E4D2700EBD80065F68D /* ActionButtonTheme.swift */; };
+		D8992E502700EDA50065F68D /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E4F2700EDA50065F68D /* GenericValueProtocol.swift */; };
+		D8992E522700EEF90065F68D /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8992E512700EEF90065F68D /* GenericBaseView.swift */; };
+		D8AE86DA2701CBD600A5385A /* ActionButtonModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86D92701CBD600A5385A /* ActionButtonModule.swift */; };
+		D8AE86DE2701CE9B00A5385A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86DD2701CE9B00A5385A /* UIView+Extension.swift */; };
+		D8AE86E02701CF6300A5385A /* ActionButtonModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86DF2701CF6300A5385A /* ActionButtonModuleData.swift */; };
+		D8AE86E32701D58C00A5385A /* LabelPackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86E22701D58C00A5385A /* LabelPackComponent.swift */; };
+		D8AE86E52701D5A300A5385A /* LabelPackComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86E42701D5A300A5385A /* LabelPackComponentData.swift */; };
+		D8AE86E82701D63300A5385A /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE86E72701D63300A5385A /* FontManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		D8992E302700E64A0065F68D /* PermissionProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermissionProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8992E342700E64A0065F68D /* PermissionProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionProjectUITests.swift; sourceTree = "<group>"; };
 		D8992E362700E64A0065F68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8992E432700E6710065F68D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D8992E462700E71E0065F68D /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		D8992E492700EA9C0065F68D /* ActionButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonData.swift; sourceTree = "<group>"; };
+		D8992E4B2700EB6C0065F68D /* ActionButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonType.swift; sourceTree = "<group>"; };
+		D8992E4D2700EBD80065F68D /* ActionButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonTheme.swift; sourceTree = "<group>"; };
+		D8992E4F2700EDA50065F68D /* GenericValueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		D8992E512700EEF90065F68D /* GenericBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		D8AE86D92701CBD600A5385A /* ActionButtonModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModule.swift; sourceTree = "<group>"; };
+		D8AE86DD2701CE9B00A5385A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D8AE86DF2701CF6300A5385A /* ActionButtonModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModuleData.swift; sourceTree = "<group>"; };
+		D8AE86E22701D58C00A5385A /* LabelPackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPackComponent.swift; sourceTree = "<group>"; };
+		D8AE86E42701D5A300A5385A /* LabelPackComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPackComponentData.swift; sourceTree = "<group>"; };
+		D8AE86E72701D63300A5385A /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +125,10 @@
 		D8992E112700E6490065F68D /* PermissionProject */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE86E92701D6F600A5385A /* Controllers */,
+				D8AE86DB2701CE8200A5385A /* Utilities */,
+				D8992E422700E6670065F68D /* BaseComponents */,
+				D8992E452700E70F0065F68D /* Components */,
 				D8992E122700E6490065F68D /* AppDelegate.swift */,
 				D8992E142700E6490065F68D /* SceneDelegate.swift */,
 				D8992E162700E6490065F68D /* ViewController.swift */,
@@ -126,6 +156,95 @@
 				D8992E362700E64A0065F68D /* Info.plist */,
 			);
 			path = PermissionProjectUITests;
+			sourceTree = "<group>";
+		};
+		D8992E422700E6670065F68D /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D8992E432700E6710065F68D /* BaseView.swift */,
+				D8992E4F2700EDA50065F68D /* GenericValueProtocol.swift */,
+				D8992E512700EEF90065F68D /* GenericBaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		D8992E452700E70F0065F68D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86E12701D57700A5385A /* LabelPackComponent */,
+				D8AE86D82701CBBD00A5385A /* ActionButtonModule */,
+				D8992E482700EA8C0065F68D /* ActionButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D8992E482700EA8C0065F68D /* ActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				D8992E462700E71E0065F68D /* ActionButton.swift */,
+				D8992E492700EA9C0065F68D /* ActionButtonData.swift */,
+				D8992E4B2700EB6C0065F68D /* ActionButtonType.swift */,
+				D8992E4D2700EBD80065F68D /* ActionButtonTheme.swift */,
+			);
+			path = ActionButton;
+			sourceTree = "<group>";
+		};
+		D8AE86D82701CBBD00A5385A /* ActionButtonModule */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86D92701CBD600A5385A /* ActionButtonModule.swift */,
+				D8AE86DF2701CF6300A5385A /* ActionButtonModuleData.swift */,
+			);
+			path = ActionButtonModule;
+			sourceTree = "<group>";
+		};
+		D8AE86DB2701CE8200A5385A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86E62701D62400A5385A /* FontManager */,
+				D8AE86DC2701CE8B00A5385A /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D8AE86DC2701CE8B00A5385A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86DD2701CE9B00A5385A /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D8AE86E12701D57700A5385A /* LabelPackComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86E22701D58C00A5385A /* LabelPackComponent.swift */,
+				D8AE86E42701D5A300A5385A /* LabelPackComponentData.swift */,
+			);
+			path = LabelPackComponent;
+			sourceTree = "<group>";
+		};
+		D8AE86E62701D62400A5385A /* FontManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86E72701D63300A5385A /* FontManager.swift */,
+			);
+			path = FontManager;
+			sourceTree = "<group>";
+		};
+		D8AE86E92701D6F600A5385A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE86EA2701D6FC00A5385A /* PermissionViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D8AE86EA2701D6FC00A5385A /* PermissionViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PermissionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +379,20 @@
 			files = (
 				D8992E172700E6490065F68D /* ViewController.swift in Sources */,
 				D8992E132700E6490065F68D /* AppDelegate.swift in Sources */,
+				D8992E502700EDA50065F68D /* GenericValueProtocol.swift in Sources */,
+				D8AE86E32701D58C00A5385A /* LabelPackComponent.swift in Sources */,
+				D8992E522700EEF90065F68D /* GenericBaseView.swift in Sources */,
+				D8AE86DA2701CBD600A5385A /* ActionButtonModule.swift in Sources */,
 				D8992E152700E6490065F68D /* SceneDelegate.swift in Sources */,
+				D8AE86DE2701CE9B00A5385A /* UIView+Extension.swift in Sources */,
+				D8992E4A2700EA9C0065F68D /* ActionButtonData.swift in Sources */,
+				D8992E442700E6710065F68D /* BaseView.swift in Sources */,
+				D8992E472700E71E0065F68D /* ActionButton.swift in Sources */,
+				D8992E4C2700EB6C0065F68D /* ActionButtonType.swift in Sources */,
+				D8992E4E2700EBD80065F68D /* ActionButtonTheme.swift in Sources */,
+				D8AE86E52701D5A300A5385A /* LabelPackComponentData.swift in Sources */,
+				D8AE86E82701D63300A5385A /* FontManager.swift in Sources */,
+				D8AE86E02701CF6300A5385A /* ActionButtonModuleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
