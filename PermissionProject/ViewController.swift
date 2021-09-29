@@ -8,30 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    private var cameraButton: ActionButton!
-    private var buttonModule: ActionButtonModule!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
     }
 
-    func configureUI() {
-        let buttonModuleData = ActionButtonModuleData(negativeButtonData: ActionButtonData(text: "No", buttonType: .outlined(.negative)), positiveButtonData: ActionButtonData(text: "Yes", buttonType: .filled(.smooth)))
-        buttonModule = ActionButtonModule(frame: .zero)
-        buttonModule.setData(with: buttonModuleData)
-        view.addSubview(buttonModule)
-        
-        buttonModule.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            
-            buttonModule.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            buttonModule.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
-        ])
+    @IBAction func photoTapped(_ sender: Any) {
+        self.present(PermissionViewBuilder.build(), animated: true, completion: nil)
     }
-
+    
+    @IBAction func cameraTapped(_ sender: Any) {
+        self.present(PermissionViewBuilder.build(), animated: true, completion: nil)
+    }
+    
 }
 
