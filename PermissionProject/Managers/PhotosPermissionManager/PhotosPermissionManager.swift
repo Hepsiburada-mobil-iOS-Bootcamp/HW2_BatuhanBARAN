@@ -6,11 +6,21 @@
 //
 
 import Foundation
+import PhotosUI
 
 class PhotosPermissionManager: PermissionManagerProtocol {
     
     func requestPermission(with completion: @escaping VoidCompletionBlock) {
-        
+        let photos = PHPhotoLibrary.authorizationStatus()
+        if photos == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({status in
+                if status == .authorized{
+                    
+                } else {
+                    
+                }
+            })
+        }
     }
     
     func getPermissionMainViewData(with negativeListener: @escaping VoidCompletionBlock, with positiveListener: @escaping VoidCompletionBlock) -> PermissionMainViewData {

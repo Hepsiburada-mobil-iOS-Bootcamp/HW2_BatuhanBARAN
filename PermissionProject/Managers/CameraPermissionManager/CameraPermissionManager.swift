@@ -6,11 +6,18 @@
 //
 
 import Foundation
+import AVFoundation
 
 class CameraPermissionManager: PermissionManagerProtocol {
     
     func requestPermission(with completion: @escaping VoidCompletionBlock) {
-        print("request permission")
+        AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+            if response {
+                
+            } else {
+
+            }
+        }
     }
     
     func getPermissionMainViewData(with negativeListener: @escaping VoidCompletionBlock, with positiveListener: @escaping VoidCompletionBlock) -> PermissionMainViewData {
