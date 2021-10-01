@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  PermissionProject
+
+  Created by Batuhan BARAN on 27.09.2021.
+  
+*/
+
+"cameraPermissionTitle" = "Camera Granted";
+"cameraPermissionSubTitle" = "Would you please give permission to access your camera.";
+
+"photosPermissionTitle" = "Photos Permission";
+"photosPermissionSubTitle" = "Would you please give permission to access your photos.";
+
+"permissionOk" = "OK";
+"permissionNotNow" = "Not Now";
