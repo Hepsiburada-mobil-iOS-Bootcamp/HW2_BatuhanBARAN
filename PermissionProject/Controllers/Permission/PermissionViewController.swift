@@ -7,28 +7,36 @@
 
 import UIKit
 
-class PermissionViewController: UIViewController {
+class PermissionViewController: BaseViewController<PermissionViewModel> {
 
     private var permissionMainView: PermissionMainView!
-    private var permissionMainViewData: PermissionMainViewData!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func prepareViewControllerConfigurations() {
+        //super.prepareViewControllerConfigurations()
+        addPermissionMainView()
+        subsribeViewModelListeners()
 
-        configureUI()
     }
     
-    func configureUI() {
-        permissionMainViewData = PermissionMainViewData(image: UIImage(named: "camera_")!, labelComponentData: LabelPackComponentData(title: PermissionLocalizables.photosPermissionTitle.value, subTitle: PermissionLocalizables.photosPermissionSubTitle.value), actionButtonModuleData: ActionButtonModuleData(negativeButtonData: ActionButtonData(text: "No", buttonType: .outlined(.negative)), positiveButtonData: ActionButtonData(text: "Yes", buttonType: .filled(.smooth))))
-        permissionMainView = PermissionMainView(frame: .zero)
-        permissionMainView.setData(with: permissionMainViewData)
+    private func addPermissionMainView() {
+        permissionMainView = PermissionMainView(data: viewModel?.getPermissionMainViewData())
         permissionMainView.translatesAutoresizingMaskIntoConstraints = false
+        
         view.addSubview(permissionMainView)
         
         NSLayoutConstraint.activate([
+        
             permissionMainView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             permissionMainView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             permissionMainView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
         ])
+    }
+    
+    private func subsribeViewModelListeners() {
+        viewModel?.listenManagerActions { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
     
 }
